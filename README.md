@@ -1,5 +1,5 @@
 # CiteSum
-This repo provides the dataset and code for paper ["CiteSum: Citation Text-guided Scientific Extreme Summarization and Low-resource Domain Adaptation"](#).
+This repo provides the dataset and code for paper ["CiteSum: Citation Text-guided Scientific Extreme Summarization and Low-resource Domain Adaptation"](https://arxiv.org/abs/2205.06207).
 
 TLDR: By pretraining on (automatically extracted) citation sentences in scientific papers, we achieve SOTA on SciTLDR, XSum, and Gigaword in zero-shot and/or few-shot settings.
 
