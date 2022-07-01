@@ -5,14 +5,14 @@ TLDR: By pretraining on (automatically extracted) citation sentences in scientif
 
 ## How to run (Huggingface)
 Our [CiteSum dataset](https://huggingface.co/datasets/nbroad/citesum) is on Huggingface Hub. You can load it simply by the following (credit @nbroad1881):
-```
+```python
 from datasets import load_dataset
 
 ds = load_dataset("nbroad/citesum")
 ```
 
 To use our model pretrained on citation texts:
-```
+```python
 from transformers import pipeline
 summarizer = pipeline("summarization", model="yuningm/bart-large-citesum")
 
@@ -33,7 +33,7 @@ summarizer(article)
 ```
 
 To use our model further pretrained on paper titles:
-```
+```python
 from transformers import pipeline
 summarizer = pipeline("summarization", model="yuningm/bart-large-citesum-title")
 
