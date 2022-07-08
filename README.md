@@ -4,11 +4,11 @@ This repo provides the dataset, model checkpoints, and code for paper ["CiteSum:
 TLDR: By pretraining on (automatically extracted) citation sentences in scientific papers, we achieve SOTA on SciTLDR, XSum, and Gigaword in zero-shot and/or few-shot settings.
 
 ## How to run (Huggingface)
-Our [CiteSum dataset](https://huggingface.co/datasets/nbroad/citesum) is on Huggingface Hub. You can load it simply by the following (credit @nbroad1881):
+CiteSum is on [Huggingface Hub](https://huggingface.co/datasets/nbroad/citesum). You can load it simply by the following (credit @nbroad1881):
 ```python
 from datasets import load_dataset
 
-ds = load_dataset("nbroad/citesum")
+ds = load_dataset("yuningm/citesum")
 ```
 
 To use our model pretrained on citation texts:
